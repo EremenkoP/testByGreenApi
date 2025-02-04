@@ -1,0 +1,43 @@
+@use '../../utils/style/mixin.scss' as *;
+@use '../../utils/style/variables.scss' as *;
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 'text text' 'input button';
+  max-width: 40%;
+  margin: 15% auto 0;
+  border-radius: 28px;
+  background-color: $main-background-color ;
+  padding: 14px;
+
+  &__text {
+    grid-area: text;
+  }
+
+  &__input {
+    grid-area: input;
+  }
+
+  &__button {
+    grid-area: button;
+  }
+}
+
+.text {
+  color: $main-color-text
+}
+
+.input {
+  @include input;
+  margin-bottom: 2%;
+
+  &_error {
+    border-color: $error-color;
+  }
+}
+
+.button {
+  @include button;
+  margin: 0 auto ;
+}

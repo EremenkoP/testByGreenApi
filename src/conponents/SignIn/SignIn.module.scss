@@ -1,0 +1,53 @@
+@use '../../utils/style/variables.scss' as *;
+@use '../../utils/style/mixin.scss' as *;
+
+.form {
+  padding: 36px;
+  border-radius: 18px;
+  background-color: $main-background-color;
+
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0 60px;
+  grid-template-areas: 'id idInput' 'token tokenInput' 'button button';
+
+  &__id {
+    grid-area: id;
+  }
+
+  &__idInput {
+    grid-area: idInput;
+  }
+
+  &__token {
+    grid-area: token;
+  }
+
+  &__tokenInput {
+    grid-area: tokenInput;
+  }
+
+  &__button {
+    grid-area: button;
+  }
+}
+
+.text {
+  color: $main-color-text
+}
+
+.input {
+  @include input;
+  margin-bottom: 2%;
+
+  &_error {
+    border-color: $error-color;
+  }
+}
+
+.button {
+  @include button;
+  width: 60%;
+  margin: 0 auto ;
+}
