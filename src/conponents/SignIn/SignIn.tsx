@@ -1,4 +1,4 @@
-import React, { FC, SyntheticEvent, useRef } from "react";
+import { FC, SyntheticEvent, useRef } from "react";
 import { ISignInData } from "../../service/types/other";
 import style from "./SignIn.module.scss";
 

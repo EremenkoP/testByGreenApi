@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, SetStateAction, SyntheticEvent } from "react";
+import { Dispatch, FC, SetStateAction, SyntheticEvent } from "react";
 import style from "./Header.module.scss";
 import { deleteCookie } from "../../service/cookie";
 import { CookieName } from "../../service/const";

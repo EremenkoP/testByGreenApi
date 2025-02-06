@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import style from './MessageList.module.scss'
 import { IMessageForView } from "../../service/types/other";
 

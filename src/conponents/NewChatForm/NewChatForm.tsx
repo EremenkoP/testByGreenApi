@@ -1,4 +1,4 @@
-import React, { FC, SyntheticEvent, useRef } from "react";
+import { FC, SyntheticEvent, useRef } from "react";
 import style from './NewChatForm.module.scss';
 
 export const NewChatForm: FC<{
